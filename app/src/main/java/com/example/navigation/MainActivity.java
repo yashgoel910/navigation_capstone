@@ -2,6 +2,7 @@ package com.example.navigation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
     Controller controller;
     String response = "";
     String flag = "0";
-
+    String step = "0";
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         controller = new Controller();
+        mp = MediaPlayer.create(this, R.raw.ting);
         b11 =  (ImageView) findViewById(R.id.b11);
         b12 =  (ImageView) findViewById(R.id.b12);
         b13 =  (ImageView) findViewById(R.id.b13);
@@ -73,10 +76,25 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             }
         }
-        else if(flag == "1"){
+        else if(flag == "1" && step == "1"){
             if(view.getId() == R.id.b21){
                // Log.d("Came here","1");
                 response = controller.getObject("21");
+            }
+        }
+        else if(flag == "1" && step == "2"){
+            if(view.getId() == R.id.b31){
+                response = controller.getObject("31");
+            }
+        }
+        else if(flag == "1" && step == "3"){
+            if(view.getId() == R.id.b32){
+                response = controller.getObject("32");
+            }
+        }
+        else if(flag == "1" && step == "4"){
+            if(view.getId() == R.id.b33){
+                response = controller.getObject("33");
             }
         }
         displayRoute(response);
@@ -108,19 +126,52 @@ public class MainActivity extends AppCompatActivity {
     public void displayRoute(String id){
         switch(id){
             case "33": {
-                flag = "1";
-                disableLights();
-                g11.setVisibility(View.VISIBLE);
-                line11_21.setVisibility(View.VISIBLE);
-                line21_31.setVisibility(View.VISIBLE);
-                line31_32.setVisibility(View.VISIBLE);
-                line32_33.setVisibility(View.VISIBLE);
+                if(flag == "0") {
+                    flag = "1";
+                    step = "1";
+                    disableLights();
+                    g11.setVisibility(View.VISIBLE);
+                    line11_21.setVisibility(View.VISIBLE);
+                    line21_31.setVisibility(View.VISIBLE);
+                    line31_32.setVisibility(View.VISIBLE);
+                    line32_33.setVisibility(View.VISIBLE);
+                }
+                else if (flag == "1" && step =="4"){
+                    mp.start();
+                    g32.setVisibility(View.INVISIBLE);
+                    g33.setVisibility(View.VISIBLE);
+                    line32_33.setVisibility(View.INVISIBLE);
+                    b33.setImageDrawable(getDrawable(R.drawable.greenbucket));
+                    Toast.makeText(this,"You have arrived!!",Toast.LENGTH_SHORT).show();
+                    step ="0";
+                    flag ="0";
+
+                }
             } break;
             case "21": {
-                if(flag == "1"){
+                if(flag == "1" && step == "1"){
                     g11.setVisibility(View.INVISIBLE);
                     g21.setVisibility(View.VISIBLE);
                     line11_21.setVisibility(View.INVISIBLE);
+                    step ="2";
+                }
+                else if(flag == "0"){Toast.makeText(this,"Route not available yet "+ id,Toast.LENGTH_SHORT).show();}
+            }break;
+            case "31": {
+                if(flag == "1" && step == "2"){
+                    g21.setVisibility(View.INVISIBLE);
+                    g31.setVisibility(View.VISIBLE);
+                    line21_31.setVisibility(View.INVISIBLE);
+                    step ="3";
+                }
+                else if(flag == "0"){Toast.makeText(this,"Route not available yet "+ id,Toast.LENGTH_SHORT).show();}
+            }break;
+            case "32": {
+                if(flag == "1" && step == "3"){
+                    g31.setVisibility(View.INVISIBLE);
+                    g32.setVisibility(View.VISIBLE);
+                    line31_32.setVisibility(View.INVISIBLE);
+                    step ="4";
                 }
                 else if(flag == "0"){Toast.makeText(this,"Route not available yet "+ id,Toast.LENGTH_SHORT).show();}
             }break;
