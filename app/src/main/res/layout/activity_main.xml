@@ -43,37 +43,40 @@
 
     <ImageView
         android:id="@+id/b23"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/g23"
         app:layout_constraintEnd_toEndOf="@+id/b33"
         app:layout_constraintStart_toEndOf="@+id/line32_33"
         app:layout_constraintTop_toTopOf="@+id/g23"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b31"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/g31"
         app:layout_constraintEnd_toEndOf="@+id/b11"
         app:layout_constraintStart_toEndOf="@+id/g31"
         app:layout_constraintTop_toTopOf="@+id/g31"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b21"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/g21"
         app:layout_constraintEnd_toEndOf="@+id/b31"
         app:layout_constraintStart_toEndOf="@+id/g21"
         app:layout_constraintTop_toTopOf="@+id/g21"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b33"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
@@ -81,7 +84,8 @@
         app:layout_constraintEnd_toEndOf="@+id/line23_33"
         app:layout_constraintStart_toStartOf="@+id/line23_33"
         app:layout_constraintTop_toTopOf="@+id/g33"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b22"
@@ -91,41 +95,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/g22"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b13"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="@+id/b12"
         app:layout_constraintEnd_toEndOf="@+id/b23"
         app:layout_constraintStart_toStartOf="@+id/b23"
         app:layout_constraintTop_toTopOf="@+id/b12"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b12"
         android:layout_width="50dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginTop="82dp"
         android:layout_marginBottom="81dp"
         app:layout_constraintBottom_toTopOf="@+id/b22"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b11"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="11dp"
         android:layout_marginEnd="11dp"
         app:layout_constraintBottom_toBottomOf="@+id/b12"
         app:layout_constraintEnd_toEndOf="@+id/heading1"
         app:layout_constraintStart_toStartOf="@+id/heading1"
         app:layout_constraintTop_toTopOf="@+id/b12"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/b32"
@@ -135,7 +143,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/g32"
-        app:srcCompat="@drawable/basket" />
+        app:srcCompat="@drawable/basket"
+        android:onClick="objectClicked"/>
 
     <ImageView
         android:id="@+id/line31_32"
@@ -175,8 +184,8 @@
 
     <ImageView
         android:id="@+id/line11_21"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="17dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="@+id/line12_22"
@@ -187,8 +196,8 @@
 
     <ImageView
         android:id="@+id/line12_22"
-        android:layout_width="65dp"
-        android:layout_height="55dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="64dp"
@@ -202,8 +211,8 @@
 
     <ImageView
         android:id="@+id/line22_32"
-        android:layout_width="65dp"
-        android:layout_height="55dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -213,8 +222,8 @@
 
     <ImageView
         android:id="@+id/line21_31"
-        android:layout_width="65dp"
-        android:layout_height="55dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="38dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -224,8 +233,8 @@
 
     <ImageView
         android:id="@+id/line23_33"
-        android:layout_width="65dp"
-        android:layout_height="55dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginEnd="45dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -235,8 +244,8 @@
 
     <ImageView
         android:id="@+id/line13_23"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="@+id/line12_22"
         app:layout_constraintEnd_toStartOf="@+id/g23"
@@ -258,8 +267,8 @@
 
     <ImageView
         android:id="@+id/g11"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginTop="1dp"
         app:layout_constraintBottom_toBottomOf="@+id/line11_12"
         app:layout_constraintEnd_toStartOf="@+id/b11"
@@ -269,8 +278,8 @@
 
     <ImageView
         android:id="@+id/g21"
-        android:layout_width="25dp"
-        android:layout_height="0dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/g22"
         app:layout_constraintEnd_toStartOf="@+id/line21_31"
         app:layout_constraintStart_toStartOf="@+id/line21_31"
@@ -279,8 +288,8 @@
 
     <ImageView
         android:id="@+id/g32"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="57dp"
@@ -291,8 +300,8 @@
 
     <ImageView
         android:id="@+id/g12"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/b12"
         app:layout_constraintEnd_toStartOf="@+id/line12_22"
         app:layout_constraintStart_toStartOf="@+id/g22"
@@ -301,8 +310,8 @@
 
     <ImageView
         android:id="@+id/g33"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/b32"
@@ -313,8 +322,8 @@
 
     <ImageView
         android:id="@+id/g13"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/b13"
         app:layout_constraintEnd_toEndOf="@+id/g23"
         app:layout_constraintStart_toEndOf="@+id/line13_23"
@@ -323,8 +332,8 @@
 
     <ImageView
         android:id="@+id/g23"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/g22"
         app:layout_constraintEnd_toEndOf="@+id/g33"
         app:layout_constraintStart_toEndOf="@+id/line23_33"
@@ -333,8 +342,8 @@
 
     <ImageView
         android:id="@+id/g22"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginStart="52dp"
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="12dp"
@@ -345,8 +354,8 @@
 
     <ImageView
         android:id="@+id/g31"
-        android:layout_width="25dp"
-        android:layout_height="0dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/g32"
         app:layout_constraintEnd_toStartOf="@+id/line21_31"
         app:layout_constraintStart_toStartOf="@+id/line21_31"
