@@ -13,6 +13,9 @@ public String  getObject(String id){
         case "21" : return "21";
         case "31" : return "31";
         case "32" : return "32";
+        case "12" : return "12";
+        case "22" : return "22";
+        case "reset" : return "reset";
         default: return "";
     }
 

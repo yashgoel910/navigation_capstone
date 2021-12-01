@@ -362,4 +362,15 @@
         app:layout_constraintTop_toTopOf="@+id/g32"
         app:srcCompat="@drawable/greenlight" />
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b32"
+        android:onClick="objectClicked"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
