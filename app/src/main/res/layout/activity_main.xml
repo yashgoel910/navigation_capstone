@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="@+id/b33"
         app:layout_constraintStart_toEndOf="@+id/line32_33"
         app:layout_constraintTop_toTopOf="@+id/g23"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/pineapple"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="@+id/b11"
         app:layout_constraintStart_toEndOf="@+id/g31"
         app:layout_constraintTop_toTopOf="@+id/g31"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/milk"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="@+id/b31"
         app:layout_constraintStart_toEndOf="@+id/g21"
         app:layout_constraintTop_toTopOf="@+id/g21"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/grapes"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="@+id/line23_33"
         app:layout_constraintStart_toStartOf="@+id/line23_33"
         app:layout_constraintTop_toTopOf="@+id/g33"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/banana"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/g22"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/strawberry"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -106,7 +106,7 @@
         app:layout_constraintEnd_toEndOf="@+id/b23"
         app:layout_constraintStart_toStartOf="@+id/b23"
         app:layout_constraintTop_toTopOf="@+id/b12"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/eggs"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -119,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/apple"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -132,7 +132,7 @@
         app:layout_constraintEnd_toEndOf="@+id/heading1"
         app:layout_constraintStart_toStartOf="@+id/heading1"
         app:layout_constraintTop_toTopOf="@+id/b12"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/orange"
         android:onClick="objectClicked"/>
 
     <ImageView
@@ -143,7 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/g32"
-        app:srcCompat="@drawable/basket"
+        app:srcCompat="@drawable/carrot"
         android:onClick="objectClicked"/>
 
     <ImageView
